@@ -407,13 +407,27 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Montserrat", "Arial", sans-serif;
-  font-size: 18px;
+  font-size: 17px;
   line-height: 30px;
   font-weight: 400;
+  letter-spacing: -0.04em;
   color: #000000;
-  background-image: url("../img/red.svg"), url("../img/yellow.svg"), linear-gradient(to bottom, #5f94ff, #5f94ff 760px, transparent 760px);
+  background-image: url("../img/cartoon1.png"), url("../img/red.svg"), url("../img/yellow.svg"), linear-gradient(to bottom, #5f94ff, #5f94ff 760px, transparent 760px);
   background-repeat: no-repeat;
-  background-position: right bottom, left bottom, top center; }
+  background-position: right 51px top 730px, right top, left top 510px, top center; }
+
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden; }
 
 .header {
   position: relative;
@@ -422,16 +436,6 @@ body {
 
 .header__container {
   min-height: 980px; }
-  .header__container::after {
-    content: "";
-    position: absolute;
-    display: block;
-    right: -209px;
-    bottom: -374px;
-    width: 513px;
-    height: 626px;
-    background-image: url("../img/cartoon1.png");
-    z-index: 2; }
 
 .header__nav {
   position: relative;
@@ -522,7 +526,6 @@ body {
   margin-top: 95px;
   margin-left: auto;
   padding-left: 224px;
-  position: relative;
   z-index: 1; }
 
 .intro__slogan {
@@ -546,8 +549,7 @@ body {
     border-radius: 5px; }
 
 .intro__image {
-  position: absolute;
-  z-index: 2; }
+  position: absolute; }
 
 .intro__image--ipad {
   top: 44px;
@@ -622,6 +624,34 @@ body {
   font-weight: 500;
   color: #d7d4cd; }
 
+.features__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 45px; }
+
+.features__item {
+  position: relative;
+  margin: 20px 0;
+  padding-left: 35px; }
+  .features__item::before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 6px;
+    left: 0;
+    width: 20px;
+    height: 18px;
+    background-image: url("../img/mikki-icon.svg");
+    background-repeat: no-repeat;
+    background-position: center; }
+
+.features__order-wrap {
+  margin-top: 55px; }
+
 .title {
   margin: 0;
   font-size: 48px;
@@ -667,5 +697,39 @@ body {
 .intro-block__lead {
   margin: 10px 0 0; }
 
-.order-wrap {
+.order {
   text-align: center; }
+
+.order__price {
+  margin: 18px 0 0; }
+
+.services {
+  padding-top: 72px;
+  padding-bottom: 91px; }
+
+.services__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+.services__link {
+  display: inline-block;
+  vertical-align: top;
+  -webkit-transition: opacity 0.2s ease;
+  transition: opacity 0.2s ease; }
+
+.services__link:hover {
+  opacity: 0.8; }
