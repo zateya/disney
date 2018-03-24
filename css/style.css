@@ -733,3 +733,12 @@ body {
 
 .services__link:hover {
   opacity: 0.8; }
+
+.promo {
+  position: relative;
+  min-height: 660px;
+  overflow: hidden; }
+
+.promo__image {
+  position: absolute;
+  top: 0; }
