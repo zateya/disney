@@ -1,0 +1,28 @@
+.features__list {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 45px;
+}
+
+.features__item {
+  position: relative;
+  margin: 20px 0;
+  padding-left: 35px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 6px;
+    left: 0;
+    width: 20px;
+    height: 18px;
+    background-image: url("../img/mikki-icon.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.features__order-wrap {
+  margin-top: 55px;
+}

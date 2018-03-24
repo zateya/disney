@@ -1,0 +1,45 @@
+.intro-block {
+  position: relative;
+  padding-top: 112px;
+  text-align: center;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 26px;
+  }
+
+  &::before {
+    right: 50%;
+    width: 40px;
+    height: 10px;
+    margin-right: 30px;
+    background-color: #ff4b64;
+    border-radius: 5px;
+  }
+
+  &::after {
+    left: 50%;
+    width: 80px;
+    height: 10px;
+    margin-left: -10px;
+    background-color: #5f94ff;
+    border-radius: 5px;
+  }
+
+  &--blue-green {
+    &::before {
+      background-color: #5f94ff;
+    }
+
+    &::after {
+      background-color: #9ecb45;
+    }
+  }
+}
+
+.intro-block__lead {
+  margin: 10px 0 0;
+}

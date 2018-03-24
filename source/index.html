@@ -3,6 +3,8 @@
 <head>
     <meta charset="utf-8">
     <title>Disney Life</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=latin-ext" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
 </head>
 <body class="page">
 <header class="header">
@@ -12,26 +14,29 @@
                 <img src="img/logo.png" width="269" height="87" alt="Disney Life">
             </a>
 
-            <ul class="header__links">
-                <li class="header__links-item">
-                    <a class="header__link" href="#">Buy a Gift</a>
-                </li>
-                <li class="header__links-item">
-                    <a class="header__link" href="#">Radeem a Gift</a>
-                </li>
-            </ul>
+            <div class="header__links-wrap">
+                <ul class="header__links">
+                    <li class="header__links-item">
+                        <a class="header__link" href="#">Buy a Gift</a>
+                    </li>
+                    <li class="header__links-item">
+                        <a class="header__link" href="#">Radeem a Gift</a>
+                    </li>
+                </ul>
 
-            <a class="header__login" href="#">Login</a>
+                <a class="header__login" href="#">Login</a>
 
-            <a class="header__trial button" href="#">Free Trial</a>
+                <a class="header__trial button button--inverse" href="#">Free Trial</a>
+            </div>
+
         </nav>
 
         <section class="intro">
             <div class="intro__text">
-                <div class="intro__slogan">Unlimited Disney Magic</div>
-                <h1 class="intro__title">Cartoons &amp; Movies</h1>
-                <a class="intro__link button" href="#">Subscribe now</a>
-                <small class="features__price price">Now only £4.99 per month.</small>
+                <div class="intro__slogan">Unlimited Disney Magic.</div>
+                <h1 class="intro__title page-title">Cartoons &amp; Movies</h1>
+                <a class="intro__link button button--inverse button--large" href="#">Subscribe now</a>
+                <p class="intro__price price">Now only £4.99 per month.</p>
             </div>
 
             <img class="intro__image intro__image--ipad" src="img/ipad.png" alt="iPad">
@@ -41,71 +46,82 @@
 </header>
 <main class="main">
     <section class="features">
-        <div class="features__container">
-            <h2 class="features__title title">One Subscription.</h2>
-            <p class="features__lead lead">A whole world of an amazing features and benefits for your family.</p>
+        <div class="features__container container">
+            <div class="features__intro intro-block intro-block intro-block--red-blue">
+                <h2 class="features__title intro-block__title title">One Subscription.</h2>
+                <p class="features__lead intro-block__lead lead">A whole world of an amazing features and benefits for your family.</p>
+            </div>
 
-            <ul class="services">
-                <li class="services__item">
-                    <a class="services__link" href="#">
-                        <img class="services__logo" src="img/disney.svg" alt="">
-                    </a>
-                </li>
-                <li class="services__item">
-                    <a class="services__link" href="#">
-                        <img class="services__logo" src="img/pixar.svg" alt="">
-                    </a>
-                </li>
-                <li class="services__item">
-                    <a class="services__link" href="#">
-                        <img class="services__logo" src="img/disney-xd.svg" alt="">
-                    </a>
-                </li>
-                <li class="services__item">
-                    <a class="services__link" href="#">
-                        <img class="services__logo" src="img/disney-chanel.svg" alt="">
-                    </a>
-                </li>
-                <li class="services__item">
-                    <a class="services__link" href="#">
-                        <img class="services__logo" src="img/disney-junior.svg" alt="">
-                    </a>
-                </li>
-            </ul>
+            <div class="services">
+                <ul class="services__list">
+                    <li class="services__item">
+                        <a class="services__link" href="#">
+                            <img class="services__logo" src="img/disney.svg" alt="">
+                        </a>
+                    </li>
+                    <li class="services__item">
+                        <a class="services__link" href="#">
+                            <img class="services__logo" src="img/pixar.svg" alt="">
+                        </a>
+                    </li>
+                    <li class="services__item">
+                        <a class="services__link" href="#">
+                            <img class="services__logo" src="img/disney-xd.svg" alt="">
+                        </a>
+                    </li>
+                    <li class="services__item">
+                        <a class="services__link" href="#">
+                            <img class="services__logo" src="img/disney-chanel.svg" alt="">
+                        </a>
+                    </li>
+                    <li class="services__item">
+                        <a class="services__link" href="#">
+                            <img class="services__logo" src="img/disney-junior.svg" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
 
-            <ul class="features__list">
-                <li class="features__item">
-                    <b>The biggest collection</b> of cartoons &amp; movies
-                </li>
-                <li class="features__item">
-                    The exclusive home of <b>Disney kids' TV box sets</b>
-                </li>
-                <li class="features__item">
-                    Live TV from <b>Disney Channel, XD and Junior</b>
-                </li>
-                <li class="features__item">
-                    Unlimited <b>downloads</b>
-                </li>
-                <li class="features__item">
-                    Access on <b>10 compatible devices</b>
-                </li>
-                <li class="features__item">
-                    Watch on <b>TV, desktop, tablet and mobile</b>
-                </li>
-                <li class="features__item">
-                    <b>10% discount</b> at Disney Store
-                </li>
-                <li class="features__item">
-                    <b>No contract</b> subscription
-                </li>
-                <li class="features__item">
-                    Appropriate for <b>1+ of age</b>
-                </li>
-            </ul>
+            <div class="features__list">
+                <div class="features__block">
+                    <div class="features__item">
+                        <b>The biggest collection</b> of cartoons &amp; movies
+                    </div>
+                    <div class="features__item">
+                        The exclusive home of <b>Disney kids' TV box sets</b>
+                    </div>
+                    <div class="features__item">
+                        Live TV from <b>Disney Channel, XD and Junior</b>
+                    </div>
+                </div>
+                <div class="features__block">
+                    <div class="features__item">
+                        Unlimited <b>downloads</b>
+                    </div>
+                    <div class="features__item">
+                        Access on <b>10 compatible devices</b>
+                    </div>
+                    <div class="features__item">
+                        Watch on <b>TV, desktop, tablet and mobile</b>
+                    </div>
+                </div>
+                <div class="features__block">
+                    <div class="features__item">
+                        <b>10% discount</b> at Disney Store
+                    </div>
+                    <div class="features__item">
+                        <b>No contract</b> subscription
+                    </div>
+                    <div class="features__item">
+                        Appropriate for <b>1+ of age</b>
+                    </div>
+                </div>
+            </div>
 
-            <div class="features__order-wrap order-wrap">
-                <a class="features__order button" href="#">Try it out for free</a>
-                <small class="features__price price">Now only £4.99 per month.</small>
+
+            <div class="features__order-wrap order">
+                <a class="features__order order__button button button--large button--blue" href="#">Try it out for free</a>
+                <p class="features__price order__price price">Now only £4.99 per month.</p>
             </div>
         </div>
     </section>
@@ -115,7 +131,7 @@
         <div class="promo__container container">
             <div class="promo__text">
                 <p class="promo__slogan">Be Brave. Don’t just take our word for it.</p>
-                <small class="promo__note">Unlimited Disney, what's not to love and enjoy!</small>
+                <p class="promo__note">Unlimited Disney, what's not to love and enjoy!</p>
                 <a class="promo__link button" href="#">Free 7 days</a>
             </div>
         </div>
@@ -123,9 +139,12 @@
     </section>
 
     <section class="discover">
-        <h2 class="discover__title title">Discover more Disney.</h2>
-        <p class="discover__lead lead">Blockbusters. Classics. Fairytales. Scary Tales. The best of Disney in one
-            app.</p>
+        <div class="discover__intro intro-block intro-block--blue-green">
+            <h2 class="discover__title intro-block__title title">Discover more Disney.</h2>
+            <p class="discover__lead intro-block__lead lead">Blockbusters. Classics. Fairytales. Scary Tales.<br>The best of Disney in one
+                app.</p>
+        </div>
+
 
         <div class="discover__tabs">
             <ul class="discover__tabs-list">
@@ -296,9 +315,9 @@
                 mobile.</p>
         </div>
 
-        <div class="discover__order-wrap order-wrap">
-            <a class="discover__order button" href="#">Try it out for free</a>
-            <small class="discover__price price">Now only £4.99 per month.</small>
+        <div class="discover__order-wrap order">
+            <a class="discover__order order__button button button--large button--green" href="#">Subscribe for Free Trial</a>
+            <p class="discover__price order__price price">Now only £4.99 per month.</p>
         </div>
     </section>
 </main>

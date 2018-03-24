@@ -1,0 +1,36 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  min-width: 1400px;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: 400;
+  letter-spacing: -0.04em;
+  color: #000000;
+  background-image: url("../img/cartoon1.png"), url("../img/red.svg"), url("../img/yellow.svg"), linear-gradient(to bottom, #5f94ff, #5f94ff 760px, transparent 760px);
+  background-repeat: no-repeat;
+  background-position: right 51px top 730px, right top, left top 510px, top center;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

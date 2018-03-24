@@ -1,3 +1,65 @@
 .header {
-  background-image: linear-gradient(90deg, #5f94ff 0, #5f94ff 760px);
+  position: relative;
+  max-width: 100%;
+  color: #ffffff;
+}
+
+.header__container {
+  min-height: 980px;
+}
+
+.header__nav {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 48px 0 0;
+  z-index: 1;
+}
+
+.header__logo-link {
+  margin-left: -7px;
+}
+
+.header__links-wrap {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.header__links {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 32px;
+}
+
+.header__links-item {
+  margin-right: 49px;
+}
+
+.header__link {
+  color: #ffffff;
+  font-weight: 500;
+  text-decoration: none;
+  letter-spacing: -0.02em;
+}
+
+.header__trial {
+  margin-left: 50px;
+}
+
+.header__login {
+  width: 42px;
+  height: 42px;
+  background-image: url("../img/login.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  text-indent: -1000px;
+  overflow: hidden;
 }

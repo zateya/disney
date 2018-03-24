@@ -1,0 +1,24 @@
+.services {
+  padding-top: 72px;
+  padding-bottom: 91px;
+}
+
+.services__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.services__link {
+  display: inline-block;
+  vertical-align: top;
+  transition: opacity 0.2s ease;
+}
+
+.services__link:hover {
+  opacity: 0.8;
+}

@@ -1,0 +1,74 @@
+.intro {
+  z-index: 1;
+}
+
+.intro__text {
+  position: relative;
+  width: 50%;
+  margin-top: 95px;
+  margin-left: auto;
+  padding-left: 224px;
+  z-index: 1;
+}
+
+.intro__slogan {
+  font-size: 43px;
+  line-height: 54px;
+  font-weight: 300;
+  letter-spacing: -0.04em;
+}
+
+.intro__title {
+  position: relative;
+  margin: 8px 0 0;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 35px;
+    left: -110px;
+    width: 80px;
+    height: 10px;
+    background-color: #ffca2a;
+    border-radius: 5px;
+  }
+}
+
+.intro__image {
+  position: absolute;
+}
+
+.intro__image--ipad {
+  top: 44px;
+  left: -195px;
+}
+
+.intro__image--iphone {
+  right: 50%;
+  bottom: -7px;
+  transform: translateX(276px);
+}
+
+.intro__link {
+  position: relative;
+  margin-top: 48px;
+}
+
+.intro__link::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 25px;
+  left: 100%;
+  margin-left: 30px;
+  width: 40px;
+  height: 10px;
+  background-color: #5f94ff;
+  border-radius: 5px;
+}
+
+.intro .intro__price {
+  margin: 20px 0 0;
+  color: rgba(#ffffff, 0.5);
+}
