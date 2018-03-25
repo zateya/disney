@@ -53,19 +53,20 @@
 .intro__link {
   position: relative;
   margin-top: 48px;
-}
 
-.intro__link::after {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 25px;
-  left: 100%;
-  margin-left: 30px;
-  width: 40px;
-  height: 10px;
-  background-color: #5f94ff;
-  border-radius: 5px;
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 25px;
+    left: 100%;
+    margin-left: 30px;
+    width: 40px;
+    height: 10px;
+    background-color: #5f94ff;
+    border-radius: 5px;
+    pointer-events: none;
+  }
 }
 
 .intro .intro__price {

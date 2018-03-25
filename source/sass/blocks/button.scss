@@ -36,3 +36,8 @@
 .button--green {
   background-color: #9ecb45;
 }
+
+.button--green.button--inverse {
+  color: #9ecb45;
+  background-color: #ffffff;
+}
