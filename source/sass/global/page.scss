@@ -16,9 +16,14 @@ body {
   font-weight: 400;
   letter-spacing: -0.04em;
   color: #000000;
-  background-image: url("../img/cartoon1.png"), url("../img/red.svg"), url("../img/yellow.svg"), linear-gradient(to bottom, #5f94ff, #5f94ff 760px, transparent 760px);
-  background-repeat: no-repeat;
-  background-position: right 51px top 730px, right top, left top 510px, center top;
+}
+
+.page__wrapper {
+  background:
+    url("../img/cartoon1.png") no-repeat right 51px top 730px,
+    url("../img/red.svg") no-repeat right top,
+    url("../img/yellow.svg") no-repeat left top 510px,
+    linear-gradient(to bottom, #5f94ff, #5f94ff 760px, transparent 760px);
 }
 
 .visually-hidden:not(:focus):not(:active) {
