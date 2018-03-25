@@ -887,3 +887,154 @@ body {
 
 .discover {
   margin-top: 56px; }
+
+.discover__tabs-list {
+  display: table;
+  border-collapse: collapse;
+  list-style: none;
+  width: 100%;
+  margin-top: 74px;
+  margin-bottom: 0;
+  padding: 0; }
+
+.discover__tabs-row {
+  position: relative;
+  display: table-row; }
+  .discover__tabs-row::before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 25px;
+    right: 0;
+    left: 0;
+    height: 130px;
+    background-color: #ffffff;
+    z-index: 1; }
+
+.discover__tab {
+  position: relative;
+  display: table-cell;
+  width: 20%;
+  font-size: 14px;
+  line-height: 32px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  border: 2px solid #e5e2db; }
+  .discover__tab::before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: -2px;
+    right: 25px;
+    left: 25px;
+    bottom: -2px;
+    background-color: #ffffff;
+    z-index: 1; }
+  .discover__tab::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    opacity: 0.07;
+    z-index: 1;
+    -webkit-transition: 0.2s ease;
+    transition: 0.2s ease; }
+
+.discover__tab--tv:hover::after,
+.discover__tab--tv.discover__tab--active::after {
+  background-color: #9ecb45; }
+
+.discover__tab--movies:hover::after,
+.discover__tab--movies.discover__tab--active::after {
+  background-color: #5f94ff; }
+
+.discover__tab--music:hover::after,
+.discover__tab--music.discover__tab--active::after {
+  background-color: #ffca2a; }
+
+.discover__tab--books:hover::after,
+.discover__tab--books.discover__tab--active::after {
+  background-color: #ff4b64; }
+
+.discover__tab--live:hover::after,
+.discover__tab--live.discover__tab--active::after {
+  background-color: #605e58; }
+
+.discover__tab-link {
+  position: relative;
+  display: block;
+  padding-top: 112px;
+  min-height: 176px;
+  color: #c9c6bf;
+  text-align: center;
+  text-decoration: none;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+  z-index: 2; }
+  .discover__tab-link:hover {
+    color: #000000; }
+  .discover__tab-link::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 46px;
+    left: 50%;
+    margin-left: -30px;
+    width: 60px;
+    height: 60px;
+    background-repeat: no-repeat;
+    background-position: center; }
+  .discover__tab-link::after {
+    content: "";
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: -2px;
+    right: -2px;
+    height: 26px;
+    border: 2px solid;
+    border-bottom: 0;
+    pointer-events: none; }
+
+.discover__tab--active .discover__tab-link {
+  color: #000000; }
+
+.discover__tab--active .discover__tab-link::after {
+  display: block; }
+
+.discover__tab--tv .discover__tab-link::after {
+  border-color: #9ecb45; }
+
+.discover__tab--movies .discover__tab-link::after {
+  border-color: #5f94ff; }
+
+.discover__tab--music .discover__tab-link::after {
+  border-color: #ff4b64; }
+
+.discover__tab--books .discover__tab-link::after {
+  border-color: #ff4b64; }
+
+.discover__tab--live .discover__tab-link::after {
+  border-color: #605e58; }
+
+.discover__tab--tv .discover__tab-link::before {
+  background-image: url("../img/tv-icon.svg"); }
+
+.discover__tab--movies .discover__tab-link::before {
+  background-image: url("../img/movies-icon.svg"); }
+
+.discover__tab--music .discover__tab-link::before {
+  background-image: url("../img/music-icon.svg"); }
+
+.discover__tab--books .discover__tab-link::before {
+  background-image: url("../img/books-icon.svg"); }
+
+.discover__tab--live .discover__tab-link::before {
+  background-image: url("../img/live-icon.svg"); }
+
+.discover__items {
+  display: none; }
