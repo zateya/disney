@@ -736,9 +736,45 @@ body {
 
 .promo {
   position: relative;
+  margin-top: 75px; }
+
+.promo::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 43.33333333%;
+  height: 105.72179487%;
+  background-image: url("../img/green.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% auto;
+  z-index: 3; }
+
+.promo__layout {
+  position: relative;
   min-height: 660px;
+  color: #ffffff;
+  background-color: #5f94ff;
   overflow: hidden; }
+  .promo__layout::before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: -70px;
+    right: 0;
+    left: 0;
+    height: 141px;
+    z-index: 2; }
 
 .promo__image {
   position: absolute;
-  top: 0; }
+  top: -22.12121212%;
+  right: 0;
+  width: 61.66666667%;
+  z-index: 0; }
+
+.discover {
+  margin-top: 56px; }
