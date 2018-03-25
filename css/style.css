@@ -564,18 +564,18 @@ body {
 .intro__link {
   position: relative;
   margin-top: 48px; }
-
-.intro__link::after {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 25px;
-  left: 100%;
-  margin-left: 30px;
-  width: 40px;
-  height: 10px;
-  background-color: #5f94ff;
-  border-radius: 5px; }
+  .intro__link::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 25px;
+    left: 100%;
+    margin-left: 30px;
+    width: 40px;
+    height: 10px;
+    background-color: #5f94ff;
+    border-radius: 5px;
+    pointer-events: none; }
 
 .intro .intro__price {
   margin: 20px 0 0;
@@ -617,6 +617,10 @@ body {
 
 .button--green {
   background-color: #9ecb45; }
+
+.button--green.button--inverse {
+  color: #9ecb45;
+  background-color: #ffffff; }
 
 .price {
   font-size: 14px;
@@ -743,15 +747,36 @@ body {
   position: absolute;
   display: block;
   top: 50%;
+  right: 100%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  width: 43.33333333%;
-  height: 105.72179487%;
+  width: 780px;
+  margin-right: calc((38.27777778% + 91px) * -1);
+  padding-bottom: 660px;
   background-image: url("../img/green.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100% auto;
   z-index: 3; }
+  @media (min-width: 1800px) {
+    .promo::before {
+      width: 43.33333333%;
+      min-width: 780px;
+      padding-bottom: 36.66666667%; } }
+
+.promo::after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: -217px;
+  left: 50%;
+  width: 321px;
+  height: 361px;
+  margin-left: -794px;
+  background-image: url("../img/cartoon2.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 4; }
 
 .promo__layout {
   position: relative;
@@ -763,18 +788,102 @@ body {
     content: "";
     position: absolute;
     display: block;
-    top: -70px;
+    top: -282px;
     right: 0;
-    left: 0;
-    height: 141px;
-    z-index: 2; }
+    width: 3600px;
+    height: 564px;
+    border: solid #ffffff;
+    border-width: 282px 3600px;
+    z-index: 2;
+    border-right: 0;
+    border-top-color: transparent;
+    border-bottom-color: transparent; }
+  .promo__layout::after {
+    content: "";
+    position: absolute;
+    display: block;
+    bottom: -282px;
+    right: 0;
+    width: 3600px;
+    height: 564px;
+    border: solid #ffffff;
+    border-width: 282px 3600px;
+    z-index: 2;
+    border-right: 0;
+    border-top-color: transparent;
+    border-bottom-color: transparent; }
 
 .promo__image {
   position: absolute;
-  top: -22.12121212%;
+  top: 0;
   right: 0;
-  width: 61.66666667%;
+  width: 61.72222222%;
+  -webkit-transform: translateY(-9.38303%);
+          transform: translateY(-9.38303%);
   z-index: 0; }
+
+.promo__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 660px; }
+
+.promo__text {
+  position: relative;
+  width: 350px;
+  padding-bottom: 5px;
+  z-index: 3; }
+
+.promo__slogan {
+  position: relative;
+  margin: 0;
+  font-size: 50px;
+  line-height: 55px;
+  font-weight: 300;
+  letter-spacing: -0.04em; }
+  .promo__slogan::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: -110px;
+    width: 80px;
+    height: 10px;
+    margin-top: -5px;
+    background-color: #ff4b64;
+    border-radius: 5px; }
+
+.promo__slogan b {
+  font-weight: 700; }
+
+.promo__note {
+  margin: 10px 0;
+  font-size: 14px;
+  line-height: 32px;
+  font-weight: 500; }
+
+.promo__link {
+  position: relative;
+  margin-top: 38px; }
+  .promo__link::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 25px;
+    left: 100%;
+    margin-left: 30px;
+    width: 40px;
+    height: 10px;
+    background-color: #ffca2a;
+    border-radius: 5px;
+    pointer-events: none; }
 
 .discover {
   margin-top: 56px; }
