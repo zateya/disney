@@ -414,7 +414,7 @@ body {
   color: #000000;
   background-image: url("../img/cartoon1.png"), url("../img/red.svg"), url("../img/yellow.svg"), linear-gradient(to bottom, #5f94ff, #5f94ff 760px, transparent 760px);
   background-repeat: no-repeat;
-  background-position: right 51px top 730px, right top, left top 510px, top center; }
+  background-position: right 51px top 730px, right top, left top 510px, center top; }
 
 .visually-hidden:not(:focus):not(:active) {
   position: absolute;
@@ -833,7 +833,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  min-height: 660px; }
+  height: 660px; }
 
 .promo__text {
   position: relative;
