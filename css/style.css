@@ -1036,5 +1036,104 @@ body {
 .discover__tab--live .discover__tab-link::before {
   background-image: url("../img/live-icon.svg"); }
 
+.discover__content {
+  min-height: 650px;
+  margin-top: 130px;
+  padding-top: 173px;
+  padding-right: 80px;
+  padding-bottom: 177px;
+  padding-left: 80px;
+  background: url(../img/yellow2.svg) no-repeat top right, url(../img/blue2.svg) no-repeat top left; }
+
 .discover__items {
   display: none; }
+  .discover__items:first-child {
+    display: block; }
+
+.discover__order-wrap {
+  margin-top: 44px; }
+
+.watch {
+  position: relative;
+  min-height: 383px; }
+  .watch::before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: -107px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url("../img/grey.svg") no-repeat center top;
+    z-index: -1; }
+
+.watch__container {
+  max-width: 610px;
+  margin-left: auto;
+  margin-right: auto; }
+  .watch__container > :first-child {
+    margin-top: 0; }
+  .watch__container > :last-child {
+    margin-bottom: 0; }
+
+.footer {
+  min-height: 390px;
+  margin-top: 94px;
+  padding-top: 150px;
+  padding-bottom: 97px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 500;
+  color: #ffb4bc;
+  background: url("../img/yellow3.svg") no-repeat left bottom, url("../img/blue3.svg") no-repeat right bottom, url("../img/red2.svg") no-repeat right bottom; }
+
+.footer__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+.footer__logo {
+  display: block; }
+
+.footer__logo-link {
+  display: inline-block;
+  vertical-align: top; }
+
+.footer__info {
+  margin-top: 40px; }
+  .footer__info > :first-child {
+    margin-top: 0; }
+  .footer__info > :last-child {
+    margin-bottom: 0; }
+
+.footer__menu-item {
+  margin-left: 22px;
+  margin-right: 22px; }
+
+.footer__menu-item + .footer__menu-item::before {
+  content: "";
+  position: absolute;
+  display: block; }
+
+.footer__menu-link {
+  color: inherit;
+  text-decoration: none; }
+  .footer__menu-link:hover {
+    color: #ffffff; }
+
+.footer__copy {
+  margin: 0;
+  line-height: 14px; }
