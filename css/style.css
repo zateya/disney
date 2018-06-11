@@ -1068,6 +1068,38 @@ body {
 .discover__order-wrap {
   margin-top: 44px; }
 
+.discover__items .slick-arrow {
+  position: absolute;
+  bottom: -34px;
+  left: 50%;
+  width: 60px;
+  height: 28px;
+  padding: 0;
+  border: 0;
+  background: url("../img/arrow.svg") no-repeat center bottom;
+  text-indent: -1000px;
+  overflow: hidden;
+  opacity: 0.75;
+  -webkit-transition: opacity 0.2s ease;
+  transition: opacity 0.2s ease; }
+  .discover__items .slick-arrow:not(.slick-disabled):hover {
+    opacity: 1;
+    cursor: pointer; }
+
+.discover__items .slick-arrow.slick-disabled {
+  opacity: 0.25; }
+
+.discover__items .slick-prev {
+  -webkit-transform: translateX(-80px);
+          transform: translateX(-80px); }
+
+.discover__items .slick-next {
+  -webkit-transform: translateX(20px) scaleX(-1);
+          transform: translateX(20px) scaleX(-1); }
+
+.discover__image {
+  position: relative; }
+
 .watch {
   position: relative;
   min-height: 383px; }
