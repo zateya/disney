@@ -1,0 +1,77 @@
+.watch {
+  position: relative;
+  min-height: 383px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: -107px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url("../img/grey.svg") no-repeat center top;
+    z-index: -1;
+  }
+}
+
+.watch__container {
+  @include reset-child-margins;
+  position: relative;
+  max-width: 610px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 72px;
+  padding-left: 195px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 80px;
+    left: 0;
+    width: 148px;
+    height: 94px;
+    background: url("../img/devices.svg") no-repeat center;
+  }
+}
+
+.watch__desc {
+  position: relative;
+  display: block;
+  margin: 0;
+  padding-bottom: 30px;
+  font-weight: 500;
+  color: #918f89;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 40px;
+    height: 10px;
+    background-color: #ffca2a;
+    border-radius: 5px;
+  }
+}
+
+.watch__subtitle {
+  position: relative;
+  display: inline-block;
+  vertical-align: baseline;
+  padding-right: 104px;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 16px;
+    right: 0;
+    width: 80px;
+    height: 10px;
+    background-color: #fb4a62;
+    border-radius: 5px;
+  }
+}

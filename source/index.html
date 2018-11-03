@@ -5,6 +5,7 @@
     <title>Disney Life</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link href="css/style.min.css" rel="stylesheet">
 </head>
 <body class="page">
@@ -153,12 +154,12 @@
                 <div class="discover__container container">
                     <div class="discover__tabs-list">
                         <div class="discover__tabs-row">
-                            <div class="discover__tab discover__tab--tv">
+                            <div class="discover__tab discover__tab--tv discover__tab--active">
                                 <a class="discover__tab-link" href="#">
                                     TV sets
                                 </a>
                             </div>
-                            <div class="discover__tab discover__tab--movies discover__tab--active">
+                            <div class="discover__tab discover__tab--movies">
                                 <a class="discover__tab-link" href="#">
                                     Movies
                                 </a>
@@ -183,143 +184,253 @@
                 </div>
 
                 <div class="discover__content">
-                    <div class="discover__items">
-                        <a class="discover__item" href="#">
-                            <img class="discover__image" src="img/movie1.jpg" width="200" height="300"
-                                 alt="Herbie Fully Loaded">
-                        </a>
-                        <a class="discover__item" href="#">
-                            <img class="discover__image" src="img/movie2.jpg" width="200" height="300" alt="Finding Nemo">
-                        </a>
-                        <a class="discover__item" href="#">
-                            <img class="discover__image" src="img/movie3.jpg" width="200" height="300"
-                                 alt="Alice in Wonderland">
-                        </a>
-                        <a class="discover__item" href="#">
-                            <img class="discover__image" src="img/movie4.jpg" width="200" height="300" alt="Tangled">
-                        </a>
-                        <a class="discover__item" href="#">
-                            <img class="discover__image" src="img/movie5.jpg" width="200" height="300"
-                                 alt="The Little Mermaid">
-                        </a>
-                        <a class="discover__item" href="#">
-                            <img class="discover__image" src="img/movie6.jpg" width="200" height="300" alt="Up">
-                        </a>
-                        <a class="discover__item" href="#">
-                            <img class="discover__image" src="img/movie7.jpg" width="200" height="300" alt="Lion King">
-                        </a>
-                    </div>
                     <div class="discover__items discover__items--active">
-                        <a class="discover__item" href="#">
-                            <img class="discover__image" src="img/movie1.jpg" width="200" height="300"
-                                 alt="Herbie Fully Loaded">
-                        </a>
-                        <a class="discover__item" href="#">
-                            <img class="discover__image" src="img/movie2.jpg" width="200" height="300" alt="Finding Nemo">
-                        </a>
-                        <a class="discover__item" href="#">
-                            <img class="discover__image" src="img/movie3.jpg" width="200" height="300"
-                                 alt="Alice in Wonderland">
-                        </a>
-                        <a class="discover__item" href="#">
-                            <img class="discover__image" src="img/movie4.jpg" width="200" height="300" alt="Tangled">
-                        </a>
-                        <a class="discover__item" href="#">
-                            <img class="discover__image" src="img/movie5.jpg" width="200" height="300"
-                                 alt="The Little Mermaid">
-                        </a>
-                        <a class="discover__item" href="#">
-                            <img class="discover__image" src="img/movie6.jpg" width="200" height="300" alt="Up">
-                        </a>
-                        <a class="discover__item" href="#">
-                            <img class="discover__image" src="img/movie7.jpg" width="200" height="300" alt="Lion King">
-                        </a>
+                        <div class="discover__item">
+                            <a class="discover__link" href="#">
+                                <img class="discover__image" src="img/movie1.jpg" width="200" height="300"
+                                            alt="Herbie Fully Loaded">
+                            </a>
+                        </div>
+                        <div class="discover__item">
+                            <a class="discover__link" href="#">
+                                <img class="discover__image" src="img/movie2.jpg" width="200" height="300" alt="Finding Nemo">
+                            </a>
+                        </div>
+                        <div class="discover__item">
+                            <a class="discover__link" href="#">
+                                <img class="discover__image" src="img/movie3.jpg" width="200" height="300"
+                                     alt="Alice in Wonderland">
+                            </a>
+                        </div>
+                        <div class="discover__item">
+                            <a class="discover__link" href="#">
+                                <img class="discover__image" src="img/movie4.jpg" width="200" height="300" alt="Tangled">
+                            </a>
+                        </div>
+                        <div class="discover__item">
+                            <a class="discover__link" href="#">
+                                <img class="discover__image" src="img/movie5.jpg" width="200" height="300"
+                                     alt="The Little Mermaid">
+                            </a>
+                        </div>
+                        <div class="discover__item">
+                            <a class="discover__link" href="#">
+                                <img class="discover__image" src="img/movie6.jpg" width="200" height="300" alt="Up">
+                            </a>
+                        </div>
+                        <div class="discover__item">
+                            <a class="discover__link" href="#">
+                                <img class="discover__image" src="img/movie7.jpg" width="200" height="300" alt="Lion King">
+                            </a>
+                        </div>
+                        <div class="discover__item">
+                            <a class="discover__link"href="#">
+                                <img class="discover__image" src="img/movie1.jpg" width="200" height="300"
+                                     alt="Herbie Fully Loaded">
+                            </a>
+                        </div>
+                        <div class="discover__item">
+                            <a class="discover__link" href="#">
+                                <img class="discover__image" src="img/movie2.jpg" width="200" height="300" alt="Finding Nemo">
+                            </a>
+                        </div>
+                        <div class="discover__item">
+                            <a class="discover__link" href="#">
+                                <img class="discover__image" src="img/movie3.jpg" width="200" height="300"
+                                     alt="Alice in Wonderland">
+                            </a>
+                        </div>
+                        <div class="discover__item">
+                            <a class="discover__link" href="#">
+                                <img class="discover__image" src="img/movie4.jpg" width="200" height="300" alt="Tangled">
+                            </a>
+                        </div>
+                        <div class="discover__item">
+                            <a class="discover__link" href="#">
+                                <img class="discover__image" src="img/movie5.jpg" width="200" height="300"
+                                     alt="The Little Mermaid">
+                            </a>
+                        </div>
+                        <div class="discover__item">
+                            <a class="discover__link" href="#">
+                                <img class="discover__image" src="img/movie6.jpg" width="200" height="300" alt="Up">
+                            </a>
+                        </div>
+                        <div class="discover__item">
+                            <a class="discover__link" href="#">
+                                <img class="discover__image" src="img/movie7.jpg" width="200" height="300" alt="Lion King">
+                            </a>
+                        </div>
                     </div>
                     <div class="discover__items">
-                        <a class="discover__item" href="#">
-                            <img class="discover__image" src="img/movie1.jpg" width="200" height="300"
-                                 alt="Herbie Fully Loaded">
-                        </a>
-                        <a class="discover__item" href="#">
-                            <img class="discover__image" src="img/movie2.jpg" width="200" height="300" alt="Finding Nemo">
-                        </a>
-                        <a class="discover__item" href="#">
-                            <img class="discover__image" src="img/movie3.jpg" width="200" height="300"
-                                 alt="Alice in Wonderland">
-                        </a>
-                        <a class="discover__item" href="#">
-                            <img class="discover__image" src="img/movie4.jpg" width="200" height="300" alt="Tangled">
-                        </a>
-                        <a class="discover__item" href="#">
-                            <img class="discover__image" src="img/movie5.jpg" width="200" height="300"
-                                 alt="The Little Mermaid">
-                        </a>
-                        <a class="discover__item" href="#">
-                            <img class="discover__image" src="img/movie6.jpg" width="200" height="300" alt="Up">
-                        </a>
-                        <a class="discover__item" href="#">
-                            <img class="discover__image" src="img/movie7.jpg" width="200" height="300" alt="Lion King">
-                        </a>
+                        <div class="discover__item">
+                            <a class="discover__link" href="#">
+                                <img class="discover__image" src="img/movie1.jpg" width="200" height="300"
+                                     alt="Herbie Fully Loaded">
+                            </a>
+                        </div>
+                        <div class="discover__item">
+                            <a class="discover__link" href="#">
+                                <img class="discover__image" src="img/movie2.jpg" width="200" height="300" alt="Finding Nemo">
+                            </a>
+                        </div>
+                        <div class="discover__item">
+                            <a class="discover__link" href="#">
+                                <img class="discover__image" src="img/movie3.jpg" width="200" height="300"
+                                     alt="Alice in Wonderland">
+                            </a>
+                        </div>
+                        <div class="discover__item">
+                            <a class="discover__link" href="#">
+                                <img class="discover__image" src="img/movie4.jpg" width="200" height="300" alt="Tangled">
+                            </a>
+                        </div>
+                        <div class="discover__item">
+                            <a class="discover__link" href="#">
+                                <img class="discover__image" src="img/movie5.jpg" width="200" height="300"
+                                     alt="The Little Mermaid">
+                            </a>
+                        </div>
+                        <div class="discover__item">
+                            <a class="discover__link" href="#">
+                                <img class="discover__image" src="img/movie6.jpg" width="200" height="300" alt="Up">
+                            </a>
+                        </div>
+                        <div class="discover__item">
+                            <a class="discover__link" href="#">
+                                <img class="discover__image" src="img/movie7.jpg" width="200" height="300" alt="Lion King">
+                            </a>
+                        </div>
                     </div>
                     <div class="discover__items">
-                        <a class="discover__item" href="#">
-                            <img class="discover__image" src="img/movie1.jpg" width="200" height="300"
-                                 alt="Herbie Fully Loaded">
-                        </a>
-                        <a class="discover__item" href="#">
-                            <img class="discover__image" src="img/movie2.jpg" width="200" height="300" alt="Finding Nemo">
-                        </a>
-                        <a class="discover__item" href="#">
-                            <img class="discover__image" src="img/movie3.jpg" width="200" height="300"
-                                 alt="Alice in Wonderland">
-                        </a>
-                        <a class="discover__item" href="#">
-                            <img class="discover__image" src="img/movie4.jpg" width="200" height="300" alt="Tangled">
-                        </a>
-                        <a class="discover__item" href="#">
-                            <img class="discover__image" src="img/movie5.jpg" width="200" height="300"
-                                 alt="The Little Mermaid">
-                        </a>
-                        <a class="discover__item" href="#">
-                            <img class="discover__image" src="img/movie6.jpg" width="200" height="300" alt="Up">
-                        </a>
-                        <a class="discover__item" href="#">
-                            <img class="discover__image" src="img/movie7.jpg" width="200" height="300" alt="Lion King">
-                        </a>
+                        <div class="discover__item">
+                            <a class="discover__link" href="#">
+                                <img class="discover__image" src="img/movie1.jpg" width="200" height="300"
+                                     alt="Herbie Fully Loaded">
+                            </a>
+                        </div>
+                        <div class="discover__item">
+                            <a class="discover__link" href="#">
+                                <img class="discover__image" src="img/movie2.jpg" width="200" height="300" alt="Finding Nemo">
+                            </a>
+                        </div>
+                        <div class="discover__item">
+                            <a class="discover__link" href="#">
+                                <img class="discover__image" src="img/movie3.jpg" width="200" height="300"
+                                     alt="Alice in Wonderland">
+                            </a>
+                        </div>
+                        <div class="discover__item">
+                            <a class="discover__link" href="#">
+                                <img class="discover__image" src="img/movie4.jpg" width="200" height="300" alt="Tangled">
+                            </a>
+                        </div>
+                        <div class="discover__item">
+                            <a class="discover__link" href="#">
+                                <img class="discover__image" src="img/movie5.jpg" width="200" height="300"
+                                     alt="The Little Mermaid">
+                            </a>
+                        </div>
+                        <div class="discover__item">
+                            <a class="discover__link" href="#">
+                                <img class="discover__image" src="img/movie6.jpg" width="200" height="300" alt="Up">
+                            </a>
+                        </div>
+                        <div class="discover__item">
+                            <a class="discover__link" href="#">
+                                <img class="discover__image" src="img/movie7.jpg" width="200" height="300" alt="Lion King">
+                            </a>
+                        </div>
                     </div>
                     <div class="discover__items">
-                        <a class="discover__item" href="#">
-                            <img class="discover__image" src="img/movie1.jpg" width="200" height="300"
-                                 alt="Herbie Fully Loaded">
-                        </a>
-                        <a class="discover__item" href="#">
-                            <img class="discover__image" src="img/movie2.jpg" width="200" height="300" alt="Finding Nemo">
-                        </a>
-                        <a class="discover__item" href="#">
-                            <img class="discover__image" src="img/movie3.jpg" width="200" height="300"
-                                 alt="Alice in Wonderland">
-                        </a>
-                        <a class="discover__item" href="#">
-                            <img class="discover__image" src="img/movie4.jpg" width="200" height="300" alt="Tangled">
-                        </a>
-                        <a class="discover__item" href="#">
-                            <img class="discover__image" src="img/movie5.jpg" width="200" height="300"
-                                 alt="The Little Mermaid">
-                        </a>
-                        <a class="discover__item" href="#">
-                            <img class="discover__image" src="img/movie6.jpg" width="200" height="300" alt="Up">
-                        </a>
-                        <a class="discover__item" href="#">
-                            <img class="discover__image" src="img/movie7.jpg" width="200" height="300" alt="Lion King">
-                        </a>
+                        <div class="discover__item">
+                            <a class="discover__link" href="#">
+                                <img class="discover__image" src="img/movie1.jpg" width="200" height="300"
+                                     alt="Herbie Fully Loaded">
+                            </a>
+                        </div>
+                        <div class="discover__item">
+                            <a class="discover__link" href="#">
+                                <img class="discover__image" src="img/movie2.jpg" width="200" height="300" alt="Finding Nemo">
+                            </a>
+                        </div>
+                        <div class="discover__item">
+                            <a class="discover__link" href="#">
+                                <img class="discover__image" src="img/movie3.jpg" width="200" height="300"
+                                     alt="Alice in Wonderland">
+                            </a>
+                        </div>
+                        <div class="discover__item">
+                            <a class="discover__link" href="#">
+                                <img class="discover__image" src="img/movie4.jpg" width="200" height="300" alt="Tangled">
+                            </a>
+                        </div>
+                        <div class="discover__item">
+                            <a class="discover__link" href="#">
+                                <img class="discover__image" src="img/movie5.jpg" width="200" height="300"
+                                     alt="The Little Mermaid">
+                            </a>
+                        </div>
+                        <div class="discover__item">
+                            <a class="discover__link" href="#">
+                                <img class="discover__image" src="img/movie6.jpg" width="200" height="300" alt="Up">
+                            </a>
+                        </div>
+                        <div class="discover__item">
+                            <a class="discover__link" href="#">
+                                <img class="discover__image" src="img/movie7.jpg" width="200" height="300" alt="Lion King">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="discover__items">
+                        <div class="discover__item">
+                            <a class="discover__link" href="#">
+                                <img class="discover__image" src="img/movie1.jpg" width="200" height="300"
+                                     alt="Herbie Fully Loaded">
+                            </a>
+                        </div>
+                        <div class="discover__item">
+                            <a class="discover__link" href="#">
+                                <img class="discover__image" src="img/movie2.jpg" width="200" height="300" alt="Finding Nemo">
+                            </a>
+                        </div>
+                        <div class="discover__item">
+                            <a class="discover__link" href="#">
+                                <img class="discover__image" src="img/movie3.jpg" width="200" height="300"
+                                     alt="Alice in Wonderland">
+                            </a>
+                        </div>
+                        <div class="discover__item">
+                            <a class="discover__link" href="#">
+                                <img class="discover__image" src="img/movie4.jpg" width="200" height="300" alt="Tangled">
+                            </a>
+                        </div>
+                        <div class="discover__item">
+                            <a class="discover__link" href="#">
+                                <img class="discover__image" src="img/movie5.jpg" width="200" height="300"
+                                     alt="The Little Mermaid">
+                            </a>
+                        </div>
+                        <div class="discover__item">
+                            <a class="discover__link" href="#">
+                                <img class="discover__image" src="img/movie6.jpg" width="200" height="300" alt="Up">
+                            </a>
+                        </div>
+                        <div class="discover__item">
+                            <a class="discover__link" href="#">
+                                <img class="discover__image" src="img/movie7.jpg" width="200" height="300" alt="Lion King">
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
 
             <div class="watch">
-                <h3 class="watch__subtitle subtitle">Watch on the GO.</h3>
-                <p class="watch__desc">Available on all Apple, Android and Amazon devices. Enjoy on TV, desktop, tablet and
-                    mobile.</p>
+                <div class="watch__container">
+                    <h3 class="watch__subtitle subtitle">Watch on the GO.</h3>
+                    <p class="watch__desc">Available on all Apple, Android and Amazon devices. Enjoy on TV, desktop, tablet and
+                        mobile.</p>
+                </div>
             </div>
 
             <div class="discover__order-wrap order">
@@ -329,40 +440,45 @@
         </section>
     </main>
     <footer class="footer">
-        <ul class="footer__menu">
-            <li class="footer__menu-item">
-                <a class="footer__menu-link" href="#">Disney</a>
-            </li>
-            <li class="footer__menu-item">
-                <a class="footer__menu-link" href="#">Pixar</a>
-            </li>
-            <li class="footer__menu-item">
-                <a class="footer__menu-link" href="#">About</a>
-            </li>
-            <li class="footer__menu-item">
-                <a class="footer__menu-link" href="#">Ways to Watch</a>
-            </li>
-            <li class="footer__menu-item">
-                <a class="footer__menu-link" href="#">Media Enquiries</a>
-            </li>
-            <li class="footer__menu-item">
-                <a class="footer__menu-link" href="#">Terms of Use</a>
-            </li>
-            <li class="footer__menu-item">
-                <a class="footer__menu-link" href="#">Privacy Policy</a>
-            </li>
-            <li class="footer__menu-item">
-                <a class="footer__menu-link" href="#">Cookies Policy</a>
-            </li>
-        </ul>
+        <div class="footer__container container">
+            <ul class="footer__menu">
+                <li class="footer__menu-item">
+                    <a class="footer__menu-link" href="#">Disney</a>
+                </li>
+                <li class="footer__menu-item">
+                    <a class="footer__menu-link" href="#">Pixar</a>
+                </li>
+                <li class="footer__menu-item">
+                    <a class="footer__menu-link" href="#">About</a>
+                </li>
+                <li class="footer__menu-item">
+                    <a class="footer__menu-link" href="#">Ways to Watch</a>
+                </li>
+                <li class="footer__menu-item">
+                    <a class="footer__menu-link" href="#">Media Enquiries</a>
+                </li>
+                <li class="footer__menu-item">
+                    <a class="footer__menu-link" href="#">Terms of Use</a>
+                </li>
+                <li class="footer__menu-item">
+                    <a class="footer__menu-link" href="#">Privacy Policy</a>
+                </li>
+                <li class="footer__menu-item">
+                    <a class="footer__menu-link" href="#">Cookies Policy</a>
+                </li>
+            </ul>
 
-        <div class="footer__info">
-            <a class="footer__logo-link" href="#">
-                <img class="footer__logo" src="img/footer-logo.png" width="215" height="71" alt="Disney Life">
-            </a>
-            <p class="footer__copy">&copy;&nbsp;2017 Disney. All Rights &amp; Copyrights Reserved.</p>
+            <div class="footer__info">
+                <a class="footer__logo-link" href="#">
+                    <img class="footer__logo" src="img/footer-logo.png" width="215" height="71" alt="Disney Life">
+                </a>
+                <p class="footer__copy">&copy;&nbsp;2017 Disney. All Rights &amp; Copyrights Reserved.</p>
+            </div>
         </div>
     </footer>
 </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="js/script.min.js"></script>
 </body>
 </html>

@@ -24,6 +24,7 @@ body {
     url("../img/red.svg") no-repeat right top,
     url("../img/yellow.svg") no-repeat left top 510px,
     linear-gradient(to bottom, #5f94ff, #5f94ff 760px, transparent 760px);
+  overflow: hidden;
 }
 
 .visually-hidden:not(:focus):not(:active) {

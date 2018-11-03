@@ -181,6 +181,133 @@
   background-image: url("../img/live-icon.svg");
 }
 
+.discover__content {
+  position: relative;
+  min-height: 650px;
+  margin-top: 130px;
+  background: url(../img/yellow2.svg) no-repeat top right,
+  url(../img/blue2.svg) no-repeat top left;
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 303px;
+    height: 366px;
+    left: 50%;
+    top: -250px;
+    transform: translateX(523px);
+    background: url("../img/cartoon3.png") no-repeat center;
+    z-index: 1;
+  }
+}
+
 .discover__items {
   display: none;
+
+  &:first-child {
+    display: block;
+  }
+}
+
+.discover__items .slick-track {
+  padding-top: 153px;
+  padding-bottom: 147px;
+}
+
+.discover__order-wrap {
+  margin-top: 44px;
+}
+
+.discover__items .slick-arrow {
+  position: absolute;
+  bottom: 122px;
+  left: 50%;
+  width: 60px;
+  height: 28px;
+  padding: 0;
+  border: 0;
+  background: url("../img/arrow.svg") no-repeat center bottom;
+  text-indent: -1000px;
+  overflow: hidden;
+  opacity: 0.75;
+  transition: opacity 0.2s ease;
+  z-index: 1;
+
+  &:not(.slick-disabled):hover {
+    opacity: 1;
+    cursor: pointer;
+  }
+}
+
+.discover__items .slick-arrow.slick-disabled {
+  opacity: 0.25;
+}
+
+.discover__items .slick-prev {
+  transform: translateX(-80px);
+}
+
+.discover__items .slick-next {
+  transform: translateX(20px) scaleX(-1);
+}
+
+.discover__item {
+  text-align: center;
+}
+
+.discover__link {
+  position: relative;
+  display: inline-block;
+  vertical-align: baseline;
+  border: 20px solid transparent;
+
+  &:hover,
+  &:focus {
+    border-color: #ff4b64;
+    box-shadow: 0 20px 50px 0 rgba(#000000, 0.4);
+
+    .discover__image {
+      box-shadow: none;
+    }
+
+    &::before,
+    &::after {
+      display: block;
+    }
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: none;
+    right: -64px;
+    bottom: -64px;
+    width: 130px;
+    height: 130px;
+    background-color:#ffffff;
+    border-radius: 50%;
+    box-shadow: 0 20px 50px 0 rgba(#000000, 0.4);
+    opacity: 0.6;
+    z-index: 2;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: none;
+    right: -54px;
+    bottom: -54px;
+    width: 110px;
+    height: 110px;
+    background: url("../img/play.svg") no-repeat center, linear-gradient(to bottom, transparent, rgba(#000000, 0.1)), #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 20px 50px 0 rgba(#000000, 0.4);
+    z-index: 3;
+  }
+}
+
+.discover__image {
+  display: block;
+  box-shadow: 0 20px 50px 0 rgba(#000000, 0.4);
 }

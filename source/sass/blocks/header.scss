@@ -48,6 +48,11 @@
   font-weight: 500;
   text-decoration: none;
   letter-spacing: -0.02em;
+  transition: color 0.2s ease;
+  
+  &:hover {
+    color: #ffb4bc;
+  }
 }
 
 .header__trial {
@@ -62,4 +67,9 @@
   background-position: center top;
   text-indent: -1000px;
   overflow: hidden;
+  transition: opacity 0.2s ease;
+
+  &:hover {
+    opacity: 0.6;
+  }
 }
